@@ -54,6 +54,7 @@ header span{
     color:#3D405B;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
+
 }
 .navigation li.current {
     background-color: #eee;

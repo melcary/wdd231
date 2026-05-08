@@ -3,11 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <meta name="description" content="Student portfolio page showcasing web certificate courses and personal information">
+    <meta name="author" content="Mel Cary">
+    <title>Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" >
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/app.js" defer></script>
 </head>
 <body>
-    <h1>CSS Normalization</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorum recusandae magnam adipisci rerum numquam vel cumque quasi nobis? Fugiat, hic rem animi inventore aliquam veritatis eligendi placeat in totam.</p>
+    <header>
+    <div class="header-inner">
+      <div class="logo">
+        <img src="images/user-alt-solid.svg" alt="site logo" width="40" height="40">
+        <span class="site-name">Site Name</span>
+        </div>
+        <button class="hamburger" id="ham-btn" aria-label="Navigation menu"></button>
+    </div>
+   </header>
+   <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="chamber.html">Chamber Project</a></li>
+      <li><a href="final.html">Final Project</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Home</h1>
+ 
+    <div class="main-grid">
+      <section class="about-section">
+        <h2 id="about-heading">About Me</h2>
+        <p>
+          My name is Mel Cary. I am a web development student passionate about creating clean, responsive, and user-friendly websites. I enjoy learning new technologies and improving my skills in HTML, CSS, and JavaScript through hands-on projects. My goal is to become a professional web developer and build modern digital experiences that are both functional and visually appealing.
+        </p>
+      </section>
+ 
+      <section class="photo-section">
+        <h2 id="photo-heading">Student Photo</h2>
+        <div class="photo">
+          <img src="images/PRF.jpg" alt="profile picture">
+        </div>
+      </section>
+    </div>
+ 
+    <section class="courses-section">
+      <h2 id="courses-heading">Web Certificate Courses</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Courses</button>
+        <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+        <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+      </div>
+      <div class="courses-grid" id="courses-grid" ></div>
+      <p class="credits-total" id="credits-total"></p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-inner">
+      <div class="social-links" aria-label="Social media links">
+        <a href="https://www.facebook.com/mel.cary.pretel" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+        <a href="www.linkedin.com/in/melcarypretel" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+        <a href="https://github.com/melcary" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+        <a href="https://x.com/cary_mel13" target="_blank"><img src="images/twitter-x.svg" alt="Twitter-x" width="16" height="16"></a>
+      </div>
+    <p class="footer-info">© <span id="currentyear"></span> • Mel Cary • Peru </p>
+    <p class="last-modified" id="lastModified"></p>
+    </div>
+  </footer>
 </body>
 </html>

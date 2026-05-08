@@ -1,0 +1,17 @@
+@media only screen and (min-width: 38rem) {
+    .hamburger{
+    display: none;
+}
+.navigation {
+    display: block;
+}
+ .navigation ul {
+    display: flex;
+}
+.navigation li {
+     border-bottom: none;
+}
+  .main-grid {
+        grid-template-columns: minmax(300px, 1fr) minmax(380px, 450px);
+    }
+}
