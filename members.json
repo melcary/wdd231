@@ -1,0 +1,33 @@
+{
+    "family_name" : "Cary",
+    "move_in_date" : "2016-01-30",
+    "number_of_people" : "5",
+    "visited_by_bishopric" : true,
+    "family_members" : [
+        {
+            "name": "Jose Cary",
+            "gender": "Male",
+            "birthdate":"1914-10-02"
+        },
+        {
+            "name": "Magaly Cary",
+            "gender":  "Female",
+            "birthdate": "1914-06-02"
+        },
+        {
+            "name": "Alison Cary",
+            "gender": "Female",
+            "birthdate": "2000-01-15"
+        },
+        {
+            "name": "Mel Cary",
+            "gender": "Female",
+            "birthdate": "2003-03-02"
+        },
+        {
+            "name": "Amara Cary",
+            "gender": "Female",
+            "birthdate": "2006-10-23"
+        }
+    ]
+}
