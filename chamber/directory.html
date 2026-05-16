@@ -11,16 +11,82 @@
     <meta property="og:image:alt" content="Lima City">
     <meta property="og:url"  content="https://melcary.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" >
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/app.js" defer></script>
-    <title>Chamber project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"></noscript>    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon-chamber.ico">
+    <script src="scripts/directory.js" defer></script>
+    <title>Directory | Chamber project</title>
 </head>
 <body>
+    <header>
+    <div class="header-inner">
+    <a href="index.html" class="logo-area">
+    <div class="logo-icon">
+     <img src="images/city-svgrepo-com.svg" alt="site logo" width="40" height="40">
+    </div>
+     <div class="logo-text">
+        <span>Chamber of Commerce</span>
+    </div>
+    </a>
+    <button class="hamburger" id="ham-btn" aria-label="Navigation menu"></button>
+      </div>
+       <nav id="main-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+      </header>
     
+    <main>
+    <h1 class="page-title">Member Directory</h1>
+    <p class="page-subtitle">Businesses associated with the Lima Chamber of Commerce</p>
+    <div class="view-toggle" role="group" aria-label="View type">
+      <button id="btn-grid" class="active" aria-label="Grid view">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+         <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
+        </svg>
+      </button>
+      <button id="btn-list" aria-label="List view">
+      <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path fill= "currentColor" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/>
+        </svg>
+      </button>
+    </div>
+     <section id="members-container" class="grid-view" aria-label="Member business listing">
+    </section>
+  </main>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <strong>Lima Chamber of Commerce</strong>
+        <p>
+          Av. Giuseppe Garibaldi 396<br/>
+          Jesús María, Lima 11, Peru<br/>
+          info@camaralima.org.pe<br/> <!--made up email-->
+          (01) 463-3434
+        </p>
+      </div>
+       <div class="footer-social" aria-label="Social media">
+        <a href="https://www.facebook.com/mel.cary.pretel" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="45" height="45"></a>
+        <a href="https://www.linkedin.com/in/melcarypretel/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="45" height="45"></a>
+        <a href="https://github.com/melcary" target="_blank"><img src="images/github.svg" alt="Github" width="45" height="45"></a>
+       </div>
+       <div class="footer-dev">
+        <p>WDD 231 — Class Project</p>
+        <p><span>Mel Cary</span></p>
+        <p class="footer-info">© <span id="currentyear"></span> • Mel Cary • Peru </p>
+        <p class="last-modified" id="lastModified"></p>
+      </div>
+ 
+    </div>
+  </footer>
 </body>
 </html>

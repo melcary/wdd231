@@ -1,0 +1,59 @@
+@media only screen and (min-width: 38rem) {
+   header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:.1rem 2rem .1rem 0.2rem;
+  }
+  
+  header a {
+    margin-bottom: 0;
+  }
+   .hamburger {
+    display: none;
+  }
+  nav {
+    display: block !important;
+     width: auto;
+    background: transparent;
+  
+  }
+  nav ul li a {
+    padding: 0.5rem 0.9rem;
+     font-size: 1.2rem; 
+  }
+  nav ul {
+     flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  nav li {
+  border-top: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+ #members-container.grid-view {
+      grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+    gap: 1.5rem;
+  }
+  .member-list-item {
+    grid-template-columns: 1.8fr 2.5fr 1.5fr 2fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 1.5rem;
+  }
+   .list-details .list-phone,
+  .list-details .list-url {
+    display: block;
+  }
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+ 
+
+}

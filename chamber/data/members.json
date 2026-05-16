@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Interbank",
+    "tagline": "Peru's leading bank in financial innovation",
+    "address": "Av. Carlos Villarán 140, La Victoria, Lima 13",
+    "phone": "(01) 219-2000",
+    "website": "https://www.interbank.pe",
+    "image": "interbank.jpg",
+    "membershipLevel": 3,
+    "email": "contacto@interbank.pe",
+    "category": "Finance"
+  },
+  {
+    "name": "Plaza Vea",
+    "tagline": "Your trusted supermarket on every corner",
+    "address": "Av. Benavides 3866, Surco, Lima 33",
+    "phone": "(01) 611-3000",
+    "website": "https://www.plazavea.com.pe",
+    "image": "plaza-vea.png",
+    "membershipLevel": 3,
+    "email": "atencion@plazavea.com.pe",
+    "category": "Retail"
+  },
+  {
+    "name": "Bembos",
+    "tagline": "The quintessential Peruvian burger experience",
+    "address": "Av. Larco 1150, Miraflores, Lima 18",
+    "phone": "(01) 445-6000",
+    "website": "https://www.bembos.com.pe",
+    "image": "bembos.jpg",
+    "membershipLevel": 2,
+    "email": "info@bembos.com.pe",
+    "category": "Food & Dining"
+  },
+  {
+    "name": "Saga Falabella",
+    "tagline": "Fashion, technology and home goods all in one place",
+    "address": "Av. Javier Prado Este 4200, Surco, Lima 33",
+    "phone": "(01) 626-0000",
+    "website": "https://www.falabella.com.pe",
+    "image": "saga-falabella.jpg",
+    "membershipLevel": 3,
+    "email": "atencion@falabella.com.pe",
+    "category": "Retail"
+  },
+  {
+    "name": "Clínica Ricardo Palma",
+    "tagline": "Health and wellness with cutting-edge technology",
+    "address": "Av. Javier Prado Este 1066, San Isidro, Lima 27",
+    "phone": "(01) 224-2224",
+    "website": "https://www.crp.com.pe",
+    "image": "clinica.png",
+    "membershipLevel": 2,
+    "email": "info@crp.com.pe",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Lima Tours",
+    "tagline": "Discover Peru with the best guides in the industry",
+    "address": "Jr. de la Unión 1040, Cercado de Lima, Lima 01",
+    "phone": "(01) 619-6900",
+    "website": "https://www.limatours.com.pe",
+    "image": "limatours.png",
+    "membershipLevel": 1,
+    "email": "ventas@limatours.com.pe",
+    "category": "Tourism"
+  },
+  {
+    "name": "Cineplanet",
+    "tagline": "The best cinematic experience in Peru",
+    "address": "Av. Primavera 1050, Surco, Lima 33",
+    "phone": "(01) 625-0000",
+    "website": "https://www.cineplanet.com.pe",
+    "image": "cineplanet.png",
+    "membershipLevel": 1,
+    "email": "contacto@cineplanet.com.pe",
+    "category": "Entertainment"
+  }
+]
