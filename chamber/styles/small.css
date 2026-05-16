@@ -3,7 +3,6 @@
   --color-primary-mid:   #1a4fa0;
   --color-accent:        #35b3d6;
   --color-accent-ultra:  #d6eaf8;
-  --color-gold:          #f0a500;
   --color-silver:        #2e587d;
   --color-bg:            #f0f6ff;
   --color-border:        #c0d8ef;
@@ -169,11 +168,11 @@ main {
   padding: 0.18rem 0.55rem;
 }
 .badge-gold {
-  background: linear-gradient(135deg, #f0a500, #f7c948);
+  background: #f0a500;
   color: #5a3800;
 }
 .badge-silver {
-  background: linear-gradient(135deg, #9bb8d4, #c5d9eb);
+  background: #9bb8d4;
   color: #1a3a55;
 }
  

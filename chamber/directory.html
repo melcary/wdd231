@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mel Cary">
     <meta name="description" content="A chamber of commerce website promoting local businesses, community events, and economic growth in the region.">
     <meta property="og:title"       content="Lima Chamber of Commerce">
-    <meta property="og:description" content="Lima Chamber of Commerce home page">
+    <meta property="og:description" content="Official Lima Chamber of Commerce website promoting local businesses, events, and community growth.">
     <meta property="og:image" content="https://melcary.github.io/wdd231/chamber/images/lima-city.jpg"> 
     <meta property="og:image:alt" content="Lima City">
     <meta property="og:url"  content="https://melcary.github.io/wdd231/chamber/directory.html">
@@ -24,18 +24,18 @@
 </head>
 <body>
     <header>
-    <div class="header-inner">
-    <a href="index.html" class="logo-area">
-    <div class="logo-icon">
-     <img src="images/city-svgrepo-com.svg" alt="site logo" width="40" height="40">
-    </div>
-     <div class="logo-text">
-        <span>Chamber of Commerce</span>
-    </div>
-    </a>
-    <button class="hamburger" id="ham-btn" aria-label="Navigation menu"></button>
+      <div class="header-inner">
+        <a href="index.html" class="logo-area">
+          <div class="logo-icon">
+            <img src="images/city-svgrepo-com.svg" alt="site logo" width="40" height="40">
+          </div>
+          <div class="logo-text">
+            <span>Chamber of Commerce</span>
+          </div>
+        </a>
+        <button class="hamburger" id="ham-btn" aria-label="Navigation menu"></button>
       </div>
-       <nav id="main-nav" role="navigation" aria-label="Main navigation">
+      <nav id="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="directory.html" class="active">Directory</a></li>
@@ -43,43 +43,42 @@
           <li><a href="discover.html">Discover</a></li>
         </ul>
       </nav>
-      </header>
+    </header>
     
     <main>
-    <h1 class="page-title">Member Directory</h1>
-    <p class="page-subtitle">Businesses associated with the Lima Chamber of Commerce</p>
-    <div class="view-toggle" role="group" aria-label="View type">
-      <button id="btn-grid" class="active" aria-label="Grid view">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
-         <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
-        </svg>
-      </button>
-      <button id="btn-list" aria-label="List view">
-      <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <path fill= "currentColor" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/>
-        </svg>
-      </button>
-    </div>
-     <section id="members-container" class="grid-view" aria-label="Member business listing">
-    </section>
-  </main>
+      <h1 class="page-title">Member Directory</h1>
+      <p class="page-subtitle">Businesses associated with the Lima Chamber of Commerce</p>
+      <div class="view-toggle" role="group" aria-label="View type">
+        <button id="btn-grid" class="active" aria-label="Grid view">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
+          </svg>
+        </button>
+        <button id="btn-list" aria-label="List view">
+          <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <path fill="currentColor" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/>
+          </svg>
+        </button>
+      </div>
+      <section id="members-container" class="grid-view" aria-label="Member business listing"></section>
+    </main>
   <footer>
     <div class="footer-inner">
       <div class="footer-contact">
         <strong>Lima Chamber of Commerce</strong>
         <p>
-          Av. Giuseppe Garibaldi 396<br/>
-          Jesús María, Lima 11, Peru<br/>
-          info@camaralima.org.pe<br/> <!--made up email-->
+          Av. Giuseppe Garibaldi 396<br>
+          Jesús María, Lima 11, Peru<br>
+          info@camaralima.org.pe<br> <!--made up email-->
           (01) 463-3434
         </p>
       </div>
-       <div class="footer-social" aria-label="Social media">
+      <div class="footer-social">
         <a href="https://www.facebook.com/mel.cary.pretel" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="45" height="45"></a>
         <a href="https://www.linkedin.com/in/melcarypretel/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="45" height="45"></a>
         <a href="https://github.com/melcary" target="_blank"><img src="images/github.svg" alt="Github" width="45" height="45"></a>
-       </div>
-       <div class="footer-dev">
+      </div>
+      <div class="footer-dev">
         <p>WDD 231 — Class Project</p>
         <p><span>Mel Cary</span></p>
         <p class="footer-info">© <span id="currentyear"></span> • Mel Cary • Peru </p>
