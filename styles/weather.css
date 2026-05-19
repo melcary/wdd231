@@ -1,0 +1,23 @@
+main {
+    border: 1px solid rgb(94, 153, 230);
+    background-color: rgb(197, 225, 246);
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+     margin: 0 auto;
+}
+h1{
+    text-align: centerÑ;
+}
+figcaption{
+    text-transform: capitalize;
+    margin: .3rem 0;
+}
+#current-temp{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+footer{
+    padding: 20px 0;
+    text-align: center;
+}
