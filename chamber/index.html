@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon-chamber.ico">
-    <script src="scripts/directory.js" defer></script>
-    <title>Directory | Chamber project</title>
+    <script src="scripts/home.js" defer></script>
+    <title>Home Page</title>
 </head>
 <body>
     <header>
@@ -39,31 +39,87 @@
       <nav id="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="discover.html">Discover</a></li>
         </ul>
       </nav>
     </header>
-    
     <main>
-      <h1 class="page-title">Member Directory</h1>
-      <p class="page-subtitle">Businesses associated with the Lima Chamber of Commerce</p>
-      <div class="view-toggle" role="group" aria-label="View type">
-        <button id="btn-grid" class="active" aria-label="Grid view">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
-          </svg>
-        </button>
-        <button id="btn-list" aria-label="List view">
-          <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <path fill="currentColor" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/>
-          </svg>
-        </button>
-      </div>
-      <section id="members-container" class="grid-view" aria-label="Member business listing"></section>
+        <!--HERO-->
+        <div class="hero">
+          <img src="images/lima-city.jpg" alt="Lima city skyline" class="hero-img" loading="eager" width="1400" height="500">
+        </div>
+        <h1 class="page-title">Home</h1>
+        <!--END-->
+        <div class="home-grid">
+          <!--EVENTS-->
+          <section class="home-card events-card">
+            <h2 class="card-section-title">Events</h2>
+            <div class="events-list">
+                <article class="event-item">
+                <div class="event-date">
+                    <span class="event-day">14</span>
+                    <span class="event-month">Jun</span>
+                </div>
+                <div class="event-info">
+                    <h3>Annual Business Expo 2025</h3>
+                    <p>Centro de Convenciones de Lima · 9:00 am – 6:00 pm</p>
+                </div>
+                </article>
+                <article class="event-item">
+                <div class="event-date">
+                    <span class="event-day">21</span>
+                    <span class="event-month">Jun</span>
+                </div>
+                <div class="event-info">
+                    <h4>Networking Breakfast</h4>
+                    <p>Hotel Westin Libertador · 8:00 am – 10:00 am</p>
+                </div>
+                </article>
+                <article class="event-item">
+                <div class="event-date">
+                    <span class="event-day">05</span>
+                    <span class="event-month">Jul</span>
+                </div>
+                <div class="event-info">
+                    <h4>SME Growth Workshop</h4>
+                    <p>Cámara de Lima HQ · 3:00 pm – 6:00 pm</p>
+                </div>
+                </article>
+               </div>
+            </section>
+          <!--WEATHER-->
+           <section class="home-card weather-card" id="weather-current">
+            <h2 class="card-section-title">Current Weather</h2>
+            <div class="weather-body">
+                <div class="weather-icon-wrap">
+                <img id="weather-icon" src="images/weather-placeholder.svg" alt="weather icon" width="64" height="64">
+                </div>
+                <div class="weather-details">
+                <p class="weather-temp"><span id="w-temp">--</span>°F</p>
+                <p id="w-desc" class="weather-desc">Loading…</p>
+                <p>High: <span id="w-high">--</span>°</p>
+                <p>Low: <span id="w-low">--</span>°</p>
+                <p>Humidity: <span id="w-humidity">--</span>%</p>
+                <p>Sunrise: <span id="w-sunrise">--</span></p>
+                <p>Sunset: <span id="w-sunset">--</span></p>
+                </div>
+            </div>
+            </section>
+            <!--FORECAST-->
+            <section class="home-card forecast-card" id="weather-forecast">
+            <h2 class="card-section-title">Weather Forecast</h2>
+            <ul class="forecast-list" id="forecast-list">
+                <li>Loading forecast…</li>
+            </ul>
+            </section>
+        </div>
+        <!--SPOTLIGHTS-->
+    
+      <div class="spotlights-grid" id="spotlights-container"></div>
     </main>
-  <footer>
+    <footer>
     <div class="footer-inner">
       <div class="footer-contact">
         <strong>Lima Chamber of Commerce</strong>
@@ -85,7 +141,6 @@
         <p class="footer-info">© <span id="currentyear"></span> • Mel Cary • Peru </p>
         <p class="last-modified" id="lastModified"></p>
       </div>
- 
     </div>
   </footer>
 </body>

@@ -1,4 +1,5 @@
-@media only screen and (min-width: 38rem) {
+
+@media only screen and (min-width: 48rem) {
    header {
     display: flex;
     align-items: center;
@@ -54,6 +55,16 @@
     align-items: flex-start;
     gap: 1rem;
   }
- 
-
+.home-grid {
+  grid-template-columns: 1.8fr 1.2fr 1.2fr;
+  gap: 1.2rem;
+  align-items: start;
 }
+.spotlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+}
+
+
