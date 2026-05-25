@@ -53,4 +53,3 @@ filterBtns.forEach(btn => {
   });
 });
 
-renderCourses('all');

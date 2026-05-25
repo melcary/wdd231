@@ -1,0 +1,6 @@
+*{box-sizing: border-box;}
+
+#openButton {background-color: rgb(153, 153, 204);}
+#dialogBox {background-color: rgb(142, 231, 231);}
+#closeButton {background-color: rgb(153, 153, 204);}
+::backdrop { background-color: rgb(216, 100,0, 0.5);}
