@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mel Cary">
+    <meta name="description" content="A chamber of commerce website promoting local businesses, community events, and economic growth in the region.">
+    <meta property="og:title"       content="Lima Chamber of Commerce">
+    <meta property="og:description" content="Official Lima Chamber of Commerce website promoting local businesses, events, and community growth.">
+    <meta property="og:image" content="https://melcary.github.io/wdd231/chamber/images/lima-city.jpg"> 
+    <meta property="og:image:alt" content="Lima City">
+    <meta property="og:url"  content="https://melcary.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"></noscript>    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon-chamber.ico">
+    <script src="scripts/join.js" defer></script>
+    <title>Join | Chamber project</title>
+</head>
+<body>
+      <header>
+      <div class="header-inner">
+        <a href="index.html" class="logo-area">
+          <div class="logo-icon">
+            <img src="images/city-svgrepo-com.svg" alt="site logo" width="40" height="40">
+          </div>
+          <div class="logo-text">
+            <span>Chamber of Commerce</span>
+          </div>
+        </a>
+        <button class="hamburger" id="ham-btn" aria-label="Navigation menu"></button>
+      </div>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="join-main">
+        <h1 class="page-title">Join the Chamber</h1>
+          <div class="join-layout">
+          <section class="join-form-section">
+          <h2 class="join-section-title">Membership Application Form</h2>
+          <form method="get" action="thankyou.html" class="join-form">
+            <label for="fname">
+              First Name *
+              <input type="text" id="fname" name="fname" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+            <label for="lname">
+              Last Name *
+              <input type="text" id="lname" name="lname" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+            <label for="org-title">
+              Organization Title
+              <input type="text" id="org-title" name="org-title" title="Enter your title within your organization (letters, hyphens, spaces; min 7 characters)" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" placeholder="e.g. General Manager">
+            </label>
+            <label for="email">
+              Email Address *
+              <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="john89@gmail.com" required>
+            </label>
+            <label for="phone">
+              Mobile Phone *
+              <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" placeholder="987-555-1234" required>
+            </label>
+            <label for="org">
+              Business / Organization Name *
+              <input type="text" id="org" name="org" title="Enter your business or organization name" autocomplete="organization" required>
+            </label>
+            <label for="membership">
+              Membership Level *
+                <select id="membership" name="membership" title="Select a membership level" required>
+                    <option value="" disabled selected>— Select a level —</option>
+                    <option value="np">NP Membership (Non-Profit · Free)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label for="description">
+              Business Description
+              <textarea id="description" name="description" title="Briefly describe your business or organization" rows="4" placeholder="Tell us about your business…"></textarea>
+            </label>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="submit" value="Submit Application" class="submit-btn">
+          </form>
+        </section>
+        <section class="membership-levels">
+          <h2 class="join-section-title">Membership Levels</h2>
+          <div class="levels-grid">
+            <div class="level-card level-np">
+              <h3>Non Profit Membership Level</h3>
+              <button class="learn-more-btn" data-modal="modal-np">Learn More</button>
+            </div>
+              <div class="level-card level-bronze">
+              <h3>Bronze Membership Level</h3>
+              <button class="learn-more-btn" data-modal="modal-bronze">Learn More</button>
+            </div>
+ 
+            <div class="level-card level-silver">
+              <h3>Silver Membership Level</h3>
+              <button class="learn-more-btn" data-modal="modal-silver">Learn More</button>
+            </div>
+ 
+            <div class="level-card level-gold">
+              <h3>Gold Membership Level</h3>
+              <button class="learn-more-btn" data-modal="modal-gold">Learn More</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <dialog id="modal-np" class="level-modal">
+      <div class="modal-inner">
+        <h3 class="modal-title modal-np-title">Non Profit Membership</h3>
+        <p class="modal-fee">Free</p>
+        <ul class="modal-benefits">
+          <li>✔ Chamber directory listing</li>
+          <li>✔ Access to networking events</li>
+          <li>✔ Monthly newsletter</li>
+          <li>✔ Community resource guides</li>
+          <li>✔ Certificate of membership</li>
+        </ul>
+        <button class="modal-close-btn" data-close="modal-np">Close</button>
+      </div>
+    </dialog>
+ 
+    <dialog id="modal-bronze" class="level-modal">
+      <div class="modal-inner">
+        <h3 class="modal-title modal-bronze-title">Bronze Membership</h3>
+        <p class="modal-fee">$200 / year</p>
+        <ul class="modal-benefits">
+          <li>✔ All Non-Profit benefits</li>
+          <li>✔ Business profile on directory</li>
+          <li>✔ 10% discount on chamber events</li>
+          <li>✔ Access to training workshops</li>
+          <li>✔ Social media shoutout (1× / year)</li>
+        </ul>
+        <button class="modal-close-btn" data-close="modal-bronze">Close</button>
+      </div>
+    </dialog>
+ 
+    <dialog id="modal-silver" class="level-modal">
+      <div class="modal-inner">
+        <h3 class="modal-title modal-silver-title">Silver Membership</h3>
+        <p class="modal-fee">$500 / year</p>
+        <ul class="modal-benefits">
+          <li>✔ All Bronze benefits</li>
+          <li>✔ 25% discount on chamber events</li>
+          <li>✔ Spotlight eligibility on home page</li>
+          <li>✔ Priority listing in directory</li>
+          <li>✔ Quarterly business consultation</li>
+          <li>✔ Social media promotion (4× / year)</li>
+        </ul>
+        <button class="modal-close-btn" data-close="modal-silver">Close</button>
+      </div>
+    </dialog>
+ 
+    <dialog id="modal-gold" class="level-modal">
+      <div class="modal-inner">
+        <h3 class="modal-title modal-gold-title">Gold Membership</h3>
+        <p class="modal-fee">$1,000 / year</p>
+        <ul class="modal-benefits">
+          <li>✔ All Silver benefits</li>
+          <li>✔ 50% discount on chamber events</li>
+          <li>✔ Featured spotlight on home page</li>
+          <li>✔ Banner ad in newsletter</li>
+          <li>✔ VIP access to special events</li>
+          <li>✔ Monthly business consultation</li>
+          <li>✔ Social media promotion (12× / year)</li>
+        </ul>
+        <button class="modal-close-btn" data-close="modal-gold">Close</button>
+      </div>
+    </dialog>
+
+    <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <strong>Lima Chamber of Commerce</strong>
+        <p>
+          Av. Giuseppe Garibaldi 396<br>
+          Jesús María, Lima 11, Peru<br>
+          info@camaralima.org.pe<br> <!--made up email-->
+          (01) 463-3434
+        </p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/mel.cary.pretel" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="45" height="45"></a>
+        <a href="https://www.linkedin.com/in/melcarypretel/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="45" height="45"></a>
+        <a href="https://github.com/melcary" target="_blank"><img src="images/github.svg" alt="Github" width="45" height="45"></a>
+      </div>
+      <div class="footer-dev">
+        <p>WDD 231 — Class Project</p>
+        <p><span>Mel Cary</span></p>
+        <p class="footer-info">© <span id="currentyear"></span> • Mel Cary • Peru </p>
+        <p class="last-modified" id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

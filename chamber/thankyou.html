@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mel Cary">
+    <meta name="description" content="A chamber of commerce website promoting local businesses, community events, and economic growth in the region.">
+    <meta property="og:title"       content="Lima Chamber of Commerce">
+    <meta property="og:description" content="Official Lima Chamber of Commerce website promoting local businesses, events, and community growth.">
+    <meta property="og:image" content="https://melcary.github.io/wdd231/chamber/images/lima-city.jpg"> 
+    <meta property="og:image:alt" content="Lima City">
+    <meta property="og:url"  content="https://melcary.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"></noscript>    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon-chamber.ico">
+    <script src="scripts/thankyou.js" defer></script>
+    <title>Thank You | Chamber project</title>
+</head>
+<body>
+      <header>
+      <div class="header-inner">
+        <a href="index.html" class="logo-area">
+          <div class="logo-icon">
+            <img src="images/city-svgrepo-com.svg" alt="site logo" width="40" height="40">
+          </div>
+          <div class="logo-text">
+            <span>Chamber of Commerce</span>
+          </div>
+        </a>
+        <button class="hamburger" id="ham-btn" aria-label="Navigation menu"></button>
+      </div>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+         <main class="thankyou-main">
+            <div class="thankyou-card">
+            <div class="thankyou-icon">🎉</div>
+            <h1 class="thankyou-title">Thank You for Applying!</h1>
+            <p class="thankyou-subtitle">We've received your membership application and will be in touch shortly. Here's a summary of what you submitted:</p>
+
+            <div class="submission-summary">
+          <div class="summary-row">
+            <span class="summary-label">First Name</span>
+            <span class="summary-value" id="s-fname">—</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Last Name</span>
+            <span class="summary-value" id="s-lname">—</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Email</span>
+            <span class="summary-value" id="s-email">—</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Mobile Phone</span>
+            <span class="summary-value" id="s-phone">—</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Organization</span>
+            <span class="summary-value" id="s-org">—</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Submitted On</span>
+            <span class="summary-value" id="s-timestamp">—</span>
+          </div>
+        </div>
+        <a href="index.html" class="back-home-btn">← Back to Home</a>
+      </div>
+        </main>
+
+
+     <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <strong>Lima Chamber of Commerce</strong>
+        <p>
+          Av. Giuseppe Garibaldi 396<br>
+          Jesús María, Lima 11, Peru<br>
+          info@camaralima.org.pe<br> <!--made up email-->
+          (01) 463-3434
+        </p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/mel.cary.pretel" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="45" height="45"></a>
+        <a href="https://www.linkedin.com/in/melcarypretel/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="45" height="45"></a>
+        <a href="https://github.com/melcary" target="_blank"><img src="images/github.svg" alt="Github" width="45" height="45"></a>
+      </div>
+      <div class="footer-dev">
+        <p>WDD 231 — Class Project</p>
+        <p><span>Mel Cary</span></p>
+        <p class="footer-info">© <span id="currentyear"></span> • Mel Cary • Peru </p>
+        <p class="last-modified" id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

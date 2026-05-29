@@ -65,6 +65,22 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
+
+ .join-layout {
+  display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
 }
-
-
+.join-form-section {
+    flex: 1.2;
+    min-width: 0;
+  }
+  .membership-levels {
+    flex: 1;
+    min-width: 260px;
+  }
+.levels-grid {
+    flex-direction: column;
+  }
