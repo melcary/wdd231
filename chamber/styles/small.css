@@ -591,7 +591,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 .level-np     { border-left: 5px solid #5dade2; }
-.level-bronze { border-left: 5px solid #cd7f32; }
+.level-bronze { border-left: 5px solid #c97521; }
 .level-silver { border-left: 5px solid #9bb8d4; }
 .level-gold   { border-left: 5px solid #f0a500; }
 .learn-more-btn {
@@ -630,11 +630,10 @@ footer {
   margin-bottom: 0.3rem;
 }
 .modal-np-title     { color: #2e86c1; }
-.modal-bronze-title { color: #cd7f32; }
+.modal-bronze-title { color: #c97521; }
 .modal-silver-title { color: #2e587d; }
 .modal-gold-title   { color: #b7860b; }
 .modal-fee {
-  font-size: 1rem;
   font-weight: 600;
   color: var(--color-silver);
   margin-bottom: 1rem;
@@ -684,7 +683,6 @@ footer {
   margin-bottom: 0.75rem;
 }
 .thankyou-subtitle {
-  font-size: 1rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -708,7 +706,6 @@ footer {
   font-size: 1rem;
 }
 .summary-value {
-  font-size: 1rem;
   overflow-wrap: break-word;
 }
 .back-home-btn {

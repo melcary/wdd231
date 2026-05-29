@@ -35,7 +35,7 @@
   padding-left: 0;
 }
  #members-container.grid-view {
-      grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
     gap: 1.5rem;
   }
   .member-list-item {
@@ -67,7 +67,7 @@
 }
 
  .join-layout {
-  display: flex;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 2.5rem;
@@ -81,6 +81,4 @@
     flex: 1;
     min-width: 260px;
   }
-.levels-grid {
-    flex-direction: column;
-  }
+
