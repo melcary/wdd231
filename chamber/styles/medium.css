@@ -1,0 +1,45 @@
+@media only screen and (min-width: 40rem) and (max-width: 64rem) {
+    .discover-card-title {
+  grid-area: name;
+}
+
+.discover-figure {
+  grid-area: photograph;
+}
+
+.discover-desc {
+  grid-area: description;
+}
+
+.discover-address {
+  grid-area: location;
+}
+
+.discover-btn {
+  grid-area: button;
+  
+}
+   .discover-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      "photograph name"
+      "photograph description"
+      "photograph location"
+      "button button";
+  }
+
+  .discover-figure img {
+    height: 100%;
+    width: 300px;
+    object-fit: cover;
+  }
+ 
+  .discover-figure img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .discover-figure img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}

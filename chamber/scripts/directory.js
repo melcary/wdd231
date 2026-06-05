@@ -7,11 +7,10 @@ navbuttom.addEventListener('click', () => {
 });
 const navLinks = document.querySelectorAll('nav ul li a');
 
-navLinks.forEach(link => {
-  if (link.href === window.location.href) {
-    link.classList.add('active');
-  }
+document.querySelectorAll('nav ul li a').forEach(link => {
+  if (link.href === window.location.href) link.classList.add('active');
 });
+ 
 
 const container = document.getElementById('members-container');
 const btnGrid   = document.getElementById('btn-grid');
