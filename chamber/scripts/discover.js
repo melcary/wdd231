@@ -50,6 +50,6 @@ grid.innerHTML = places.map((place, i) => `
     </figure>
       <p class="discover-desc">${place.description}</p>
       <p class="discover-address">${place.address}</p>
-    <a href="${place.link}" target="_blank" rel="noopener" class="discover-btn" aria-label="Learn more about ${place.name}" title="Learn more about ${place.name}">Learn More</a>
+    <a href="${place.link}" target="_blank" rel="noopener" class="discover-btn" aria-label="Learn more about ${place.name}" title="Learn more about ${place.name}">Learn More about ${place.name}</a>
   </article>
 `).join('');
