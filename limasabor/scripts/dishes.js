@@ -93,7 +93,7 @@ function openModal(id) {
     <img
   class="modal-img"
   src="${dish.image}"
-  alt="${dish.name}">
+  alt="${dish.name}" loading="lazy">
   <div class="modal-content">
     <h2>${dish.name}</h2>
     <p>${dish.description}</p>
