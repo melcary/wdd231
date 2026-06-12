@@ -33,12 +33,12 @@ async function loadFeaturedDishes() {
     grid.innerHTML = featured.map(dish => `
   <article class="card">
     <img
-      class="card-img"
+      class="dish-img"
       src="${dish.image}"
       alt="${dish.name}"
       loading="lazy"
     >
-    <div class="card-body">
+    <div class="dish-card-body">
       <h3>${dish.name}</h3>
       <p>
         ${dish.category} 

@@ -35,18 +35,18 @@ function renderDishes(dishes) {
     <article class="card dish-card" data-id="${dish.id}" tabindex="0"
          role="button" aria-label="View details for ${dish.name}">
   <img
-    class="card-img"
+    class="dish-img"
     src="${dish.image}"
     alt="${dish.name}"
     loading="lazy"
   >
 
-  <div class="card-body">
+  <div class="dish-card-body">
     <h3>${dish.name}</h3>
 
     <p>
-      <span class="badge">${dish.category}</span>
-      <span class="badge">${dish.region}</span>
+      <span class="tag-label">${dish.category}</span>
+      <span class="tag-label">${dish.region}</span>
     </p>
 
   </div>
@@ -66,7 +66,7 @@ function renderDishes(dishes) {
 }
 
 function initFilters() {
-  const buttons = document.querySelectorAll('.filter-btn');
+  const buttons = document.querySelectorAll('.filter-button');
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
       activeFilter = btn.dataset.filter;
@@ -85,24 +85,24 @@ function initFilters() {
 function openModal(id) {
   const dish    = allDishes.find(d => d.id === id);
   const overlay = document.getElementById('dish-modal');
-  const content = document.getElementById('modal-content');
+  const content = document.getElementById('dish-modal-content');
   if (!dish || !overlay || !content) return;
 
   content.innerHTML = `
-    <button class="modal-close" id="modal-close-btn" aria-label="Close dialog">✕</button>
+    <button class="dish-modal-close" id="dish-modal-close-button" aria-label="Close dialog">✕</button>
     <img
-  class="modal-img"
+  class="dish-modal-img"
   src="${dish.image}"
   alt="${dish.name}" loading="lazy">
-  <div class="modal-content">
+  <div class="dish-modal-content">
     <h2>${dish.name}</h2>
     <p>${dish.description}</p>
-    <div class="modal-detail">
-      <div class="modal-detail-item">
+    <div class="dish-modal-detail">
+      <div class="dish-modal-detail-item">
         <label>Category</label>
         <span>${dish.category}</span>
       </div>
-      <div class="modal-detail-item">
+      <div class="dish-modal-detail-item">
         <label>Region</label>
         <span>${dish.region}</span>
       </div>
@@ -118,7 +118,7 @@ function openModal(id) {
   overlay.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
 
-  const closeBtn = document.getElementById('modal-close-btn');
+  const closeBtn = document.getElementById('dish-modal-close-button');
   closeBtn?.focus();
   closeBtn?.addEventListener('click', closeModal);
 }
@@ -156,11 +156,11 @@ async function loadDishes() {
 function persistFilter() {
   const saved = localStorage.getItem('ls_dish_filter');
   if (saved) {
-    const btn = document.querySelector(`.filter-btn[data-filter="${saved}"]`);
+    const btn = document.querySelector(`.filter-buton[data-filter="${saved}"]`);
     if (btn) btn.click();
   }
 
-  document.querySelectorAll('.filter-btn').forEach(btn => {
+  document.querySelectorAll('.filter-button').forEach(btn => {
     btn.addEventListener('click', () => {
       localStorage.setItem('ls_dish_filter', btn.dataset.filter);
     });

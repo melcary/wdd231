@@ -47,7 +47,7 @@
   gap: 1rem;
 }
 
-.hero-actions .btn { text-align: left; }
+.hero-actions .button { text-align: left; }
 
 .hero-image-wrap { display: none; }
   .features-inner {
@@ -60,7 +60,7 @@
   .home-dishes-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .home-dishes-grid .card-img{
+  .home-dishes-grid .dish-img{
     height: 290px;
     width: 400px;
   }

@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://melcary.github.io/wdd231/limasabor/images/og-image.jpg"> 
   <link rel="icon" href="favicon-limasabor.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com" >
-  <link rel="preconnect" href="https://fonts.gstatic.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
@@ -43,14 +43,14 @@
     <div class="dishes-controls">
       <div class="filter-group">
         <label>Filter by category:</label>
-        <button class="filter-btn active" data-filter="All">All</button>
-        <button class="filter-btn" data-filter="Seafood">Seafood</button>
-        <button class="filter-btn" data-filter="Stir-fry">Stir-fry</button>
-        <button class="filter-btn" data-filter="Stew">Stew</button>
-        <button class="filter-btn" data-filter="Appetizer">Appetizer</button>
-        <button class="filter-btn" data-filter="Street Food">Street Food</button>
-        <button class="filter-btn" data-filter="Dessert">Dessert</button>
-        <button class="filter-btn" data-filter="Soup">Soup</button>
+        <button class="filter-button active" data-filter="All">All</button>
+        <button class="filter-button" data-filter="Seafood">Seafood</button>
+        <button class="filter-button" data-filter="Stir-fry">Stir-fry</button>
+        <button class="filter-button" data-filter="Stew">Stew</button>
+        <button class="filter-button" data-filter="Appetizer">Appetizer</button>
+        <button class="filter-button" data-filter="Street Food">Street Food</button>
+        <button class="filter-button" data-filter="Dessert">Dessert</button>
+        <button class="filter-button" data-filter="Soup">Soup</button>
       </div>
 
       <!-- Weather -->
@@ -66,8 +66,8 @@
 
   </main>
 
-  <div id="dish-modal" class="modal-overlay">
-    <div class="modal" id="modal-content">
+  <div id="dish-modal" class="dish-modal-overlay">
+    <div class="dish-modal" id="dish-modal-content">
     </div>
   </div>
    <footer>
