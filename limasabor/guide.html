@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore recommended places to eat, local food experiences, and practical tips for discovering authentic Peruvian cuisine.">
+  <meta name="author" content="Mel Cary">
+  <meta property="og:title" content="Lima Sabor — Gastronomic Tourism Guide">
+  <meta property="og:description" content="Explore Lima's iconic dishes, restaurants, and markets. Your guide to Peru's culinary capital.">
+  <meta property="og:type" content="website">
+  <meta property="og:url"   content="https://melcary.github.io/wdd231/limasabor/index.html">
+  <meta property="og:image" content="https://melcary.github.io/wdd231/limasabor/images/og-image.jpg"> 
+  <link rel="icon" href="favicon-limasabor.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <title>Lima Sabor | Guide</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Lima Sabor</a>
+      <button class="hamburger" id="ham-btn" aria-label="Navigation menu"></button>
+    </nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dishes.html">Dishes</a></li>
+        <li><a href="guide.html">Guide</a></li>
+      </ul>
+  </header>
+  <main id="main-content">
+
+    <section class="page-hero">
+      <h1 id="guide-heading">Restaurant & Market Guide</h1>
+      <p>Explore Lima's best dining spots by neighborhood</p>
+    </section>
+
+    <div class="guide-intro">
+      <div>
+        <h2>Where to Eat in Lima</h2>
+        <p>
+          Lima's neighborhoods each have a distinct culinary personality. Miraflores is home
+          to fine dining and internationally renowned restaurants. Barranco brings a bohemian
+          spirit with creative chefs and cozy cafés. Surquillo's markets offer the freshest
+          ingredients and authentic local cooking at everyday prices.
+        </p>
+        <p>
+          Below you'll find curated recommendations for each area, from world-class
+          restaurants to the street stalls locals swear by.
+        </p>
+      </div>
+      <div>
+        <div class="weather-widget" id="weather-widget">
+          <span>📍 Lima, Peru</span>
+        </div>
+        <p>
+          Planning to eat out? Check Lima's current weather above.
+        </p>
+      </div>
+    </div>
+
+    <div class="neighborhood-grid" aria-label="Neighborhoods">
+
+      <article class="neighborhood-card">
+        <img src="images/miraflorers.jpg"class="card-img" aria-label="Miraflores neighborhood photo">
+        <h3>Miraflores</h3>
+        <p>Upscale dining, ocean views, world-class chefs</p>
+        <ul class="restaurant-list" aria-label="Miraflores restaurants">
+          <li class="restaurant-item">
+            <strong>La Mar</strong>
+            Best ceviche in Lima · Seafood
+          </li>
+          <li class="restaurant-item">
+            <strong>Central</strong>
+            #1 restaurant in Latin America · Peruvian haute cuisine
+          </li>
+          <li class="restaurant-item">
+            <strong>Maido</strong>
+            Japanese-Peruvian Nikkei cuisine · Seafood / Fusion
+          </li>
+          <li class="restaurant-item">
+            <strong>Grimanesa Vargas</strong>
+            Legendary anticuchos street stall · Street Food
+          </li>
+        </ul>
+      </article>
+
+      <article class="neighborhood-card">
+        <img src="images/barranco.jpg"class="card-img" aria-label="Barranco neighborhood photo">
+        <h3>Barranco</h3>
+        <p>Bohemian vibe, creative kitchens, café culture</p>
+        <ul class="restaurant-list" aria-label="Barranco restaurants">
+          <li class="restaurant-item">
+            <strong>Isolina</strong>
+            Afro-Peruvian comfort food · Traditional
+          </li>
+          <li class="restaurant-item">
+            <strong>Café Bisetti</strong>
+            Best coffee in Lima + pastries · Café
+          </li>
+          <li class="restaurant-item">
+            <strong>Tía Grimanesa</strong>
+            Famous picarones dessert stall · Street Food
+          </li>
+          <li class="restaurant-item">
+            <strong>Canta Rana</strong>
+            Casual ceviche spot, loved by locals · Seafood
+          </li>
+        </ul>
+      </article>
+
+      <article class="neighborhood-card">
+        <img src="images/surquillo.jpg"class="card-img" aria-label="Surquillo market photo">
+        <h3>Surquillo</h3>
+        <p>Authentic markets, local eateries, unbeatable prices</p>
+        <ul class="restaurant-list" aria-label="Surquillo restaurants">
+          <li class="restaurant-item">
+            <strong>Mercado de Surquillo</strong>
+            Lima's best produce and seafood market · Market
+          </li>
+          <li class="restaurant-item">
+            <strong>La Picantería</strong>
+            Northern Peruvian cuisine, weekend lunch spot · Traditional
+          </li>
+          <li class="restaurant-item">
+            <strong>El Rincón que No Conoces</strong>
+            Hidden gem for classic criollo cooking · Traditional
+          </li>
+        </ul>
+      </article>
+
+      <article class="neighborhood-card">
+        <img src="images/historic-center.jpg" class="card-img" aria-label="Historic Center photo">
+        <h3>Historic Center</h3>
+        <p>Traditional picanterías, heritage markets, street food</p>
+        <ul class="restaurant-list" aria-label="Historic Center restaurants">
+          <li class="restaurant-item">
+            <strong>Tanta</strong>
+            Gastón Acurio's bistro, great for lunch · Peruvian
+          </li>
+          <li class="restaurant-item">
+            <strong>Mercado Central</strong>
+            Street food, juices, chicharrón · Market
+          </li>
+          <li class="restaurant-item">
+            <strong>L'Eau Vive</strong>
+            Historic restaurant run by nuns since 1959 · French-Peruvian
+          </li>
+        </ul>
+      </article>
+
+    </div>
+
+    <!-- RECOMMENDATION FORM -->
+    <section class="contact-section">
+      <div class="contact-inner">
+        <h2 id="form-heading">Share a Recommendation</h2>
+        <p>
+          Know a great spot we missed? Tell us about it.
+        </p>
+
+        <form id="recommendation-form" action="thankyou.html" method="get">
+
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" required
+                   placeholder="e.g. María García"
+                   autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required
+                   placeholder="you@gmail.com"
+                   autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="neighborhood">Neighborhood *</label>
+            <select id="neighborhood" name="neighborhood" required>
+              <option value="" disabled selected>Select a neighborhood</option>
+              <option value="Miraflores">Miraflores</option>
+              <option value="Barranco">Barranco</option>
+              <option value="Surquillo">Surquillo</option>
+              <option value="Historic Center">Historic Center</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="restaurant">Restaurant or Market Name *</label>
+            <input type="text" id="restaurant" name="restaurant" required
+                   placeholder="e.g. El Señorio de Sulco">
+          </div>
+
+          <div class="form-group">
+            <label for="dish">Recommended Dish</label>
+            <input type="text" id="dish" name="dish"
+                   placeholder="e.g. Arroz con leche">
+          </div>
+
+          <div class="form-group">
+            <label for="rating">Your Rating *</label>
+            <select id="rating" name="rating" required>
+              <option value="" disabled selected>Select a rating</option>
+              <option value="5">⭐⭐⭐⭐⭐ — Excellent</option>
+              <option value="4">⭐⭐⭐⭐ — Very Good</option>
+              <option value="3">⭐⭐⭐ — Good</option>
+              <option value="2">⭐⭐ — Fair</option>
+              <option value="1">⭐ — Poor</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" rows="4"
+                      placeholder="Tell us what makes this place special…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit">
+            Submit Recommendation
+          </button>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-social">
+        <a href="https://www.facebook.com/mel.cary.pretel" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="45" height="45"></a>
+        <a href="https://www.linkedin.com/in/melcarypretel/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="45" height="45"></a>
+        <a href="https://github.com/melcary" target="_blank"><img src="images/github.svg" alt="Github" width="45" height="45"></a>
+      </div>
+      <div class="footer-dev">
+        <p>WDD 231 — Class Project</p>
+        <p><span>Mel Cary</span></p>
+        <p class="footer-info">© <span id="currentyear"></span> • Mel Cary • Peru </p>
+        <p class="last-modified" id="lastModified"></p>
+        <p>
+        Weather data by <a href="https://openweathermap.org" target="_blank" rel="noopener">OpenWeatherMap</a> ·
+        <a href="attributions.html">Attributions</a>
+        </p>
+      </div>
+  </footer>
+  <script type="module" src="scripts/guide.js"></script>
+</body>
+</html>

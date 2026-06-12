@@ -1,0 +1,114 @@
+@media only screen and (min-width: 60rem) {
+    .hamburger { display: none; }
+
+    .nav-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: none;
+}
+   .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 0 1rem;
+    gap: 2rem;
+    max-width: none;
+  }
+  .nav-links li {
+    list-style: none;
+  }
+
+  .nav-links li a {
+     border-bottom: none;
+  }
+   
+  .nav-links a:hover,
+  .nav-links a.active {
+    background: transparent;
+    border-bottom: 2px solid var(--color-bg);
+  }
+  .hero{
+    padding: 5rem;
+  }
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero-actions {
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.hero-actions .btn { text-align: left; }
+
+.hero-image-wrap { display: none; }
+  .features-inner {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+ 
+  .feature-item { flex: 1; max-width: 300px; }
+  .home-dishes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .home-dishes-grid .card-img{
+    height: 290px;
+    width: 400px;
+  }
+  .section-alt{
+    padding: 0 2rem;
+  }
+  .sr-only{
+    padding: 0 2rem;
+  }
+   .dishes-controls {
+    max-width: none;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem 0;
+  }
+  .filter-group label { width: auto; }
+  
+ #dishes-grid {
+    max-width: none;
+    padding: 0 2rem;
+   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+  }
+
+   .guide-intro {
+    max-width: none;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3rem 3rem 0;
+    gap: 5rem;
+  }
+   .guide-intro > div:first-child { flex: 2; }
+   .guide-intro > div:last-child  { flex: 1; }
+
+   .neighborhood-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    text-align: left;
+    padding: 2rem 2rem;
+  }
+  #main-content-attribution{
+    padding: 0 2rem;
+  }
+}

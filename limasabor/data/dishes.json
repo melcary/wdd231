@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Ceviche Clásico",
+    "category": "Seafood",
+    "region": "Lima",
+    "description": "Fresh raw fish cured in lime juice, mixed with red onion, cilantro, and ají amarillo. Peru's most iconic dish.",
+    "whereToTry": "La Mar, Miraflores",
+    "image": "images/ceviche.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lomo Saltado",
+    "category": "Stir-fry",
+    "region": "Lima",
+    "description": "Stir-fried beef tenderloin with tomatoes, onions, soy sauce, and French fries, served with white rice. A perfect blend of Peruvian and Chinese flavors.",
+    "whereToTry": "Isolina, Barranco",
+    "image": "images/lomo-saltado.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Anticuchos",
+    "category": "Street Food",
+    "region": "Lima",
+    "description": "Grilled beef heart skewers marinated in vinegar, ají panca, and spices. A beloved Lima street food tradition since pre-Columbian times.",
+    "whereToTry": "Grimanesa Vargas, Miraflores",
+    "image": "images/anticucho.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Causa Limeña",
+    "category": "Appetizer",
+    "region": "Lima",
+    "description": "Layered cold potato dish made with ají amarillo-seasoned mashed yellow potato, filled with tuna or chicken salad and avocado.",
+    "whereToTry": "Central, Miraflores",
+    "image": "images/causa.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Ají de Gallina",
+    "category": "Stew",
+    "region": "Lima",
+    "description": "Shredded chicken in a creamy yellow ají amarillo sauce with bread, walnuts, and Parmesan cheese. Comfort food at its finest.",
+    "whereToTry": "El Rincón que No Conoces, Lince",
+    "image": "images/aji-gallina.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Papa a la Huancaína",
+    "category": "Appetizer",
+    "region": "Huancayo / Lima",
+    "description": "Boiled potatoes served with a spicy, creamy sauce made from ají amarillo, fresh cheese, and crackers. A classic Peruvian starter.",
+    "whereToTry": "Tanta, San Isidro",
+    "image": "images/papa-huancaina.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Tiradito",
+    "category": "Seafood",
+    "region": "Lima",
+    "description": "Thinly sliced raw fish dressed with leche de tigre and ají amarillo sauce. Similar to ceviche but without onion and with Japanese Nikkei influence.",
+    "whereToTry": "Maido, Miraflores",
+    "image": "images/tiradito.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Arroz con Leche",
+    "category": "Dessert",
+    "region": "Lima",
+    "description": "Creamy rice pudding cooked with cinnamon, cloves, and condensed milk, topped with cinnamon powder. A classic Peruvian dessert often paired with mazamorra morada.",
+    "whereToTry": "Any traditional restaurant in Lima",
+    "image": "images/arroz-leche.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Caldo de Gallina",
+    "category": "Soup",
+    "region": "Lima",
+    "description": "Rich hen broth with noodles, boiled egg, and vegetables. Lima's ultimate hangover cure and late-night comfort dish, served at small local restaurants.",
+    "whereToTry": "Mercado de Surquillo",
+    "image": "images/caldo-gallina.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Leche de Tigre",
+    "category": "Beverage / Appetizer",
+    "region": "Lima",
+    "description": "The citrus marinade left over from ceviche, blended with fish, ají, and cilantro. Served as a shot or small glass. Said to have energizing properties.",
+    "whereToTry": "La Mar, Miraflores",
+    "image": "images/leche-tigre.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Picarones",
+    "category": "Dessert",
+    "region": "Lima",
+    "description": "Sweet potato and squash doughnuts fried and drizzled with chancaca syrup (raw cane sugar molasses). A popular street dessert during processions.",
+    "whereToTry": "Tía Grimanesa, Barranco",
+    "image": "images/picarones.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Seco de Res",
+    "category": "Stew",
+    "region": "Lima / Lambayeque",
+    "description": "Beef slow-cooked in cilantro broth with chicha de jora and vegetables, served with canary beans and white rice. Deep flavors from the north of Peru.",
+    "whereToTry": "El Rincón que No Conoces, Lince",
+    "image": "images/seco-res.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Chupe de Camarones",
+    "category": "Soup",
+    "region": "Arequipa / Lima",
+    "description": "Hearty shrimp chowder with potatoes, corn, egg, and cheese, seasoned with ají panca. A rich and filling Peruvian soup from Arequipa.",
+    "whereToTry": "La Picantería, Surquillo",
+    "image": "images/chupe-camarones.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Tacu Tacu",
+    "category": "Main Course",
+    "region": "Lima",
+    "description": "Leftover beans and rice pan-fried into a crispy cake, served with lomo saltado sauce or fried egg. Humble origins, extraordinary flavor.",
+    "whereToTry": "Isolina, Barranco",
+    "image": "images/tacu-tacu.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Mazamorra Morada",
+    "category": "Dessert",
+    "region": "Lima",
+    "description": "Purple corn pudding cooked with dried fruits, cinnamon, cloves, and sweet potato starch. Deep purple color and sweet-spiced flavor. Lima's most beloved dessert.",
+    "whereToTry": "Any traditional market in Lima",
+    "image": "images/mazamorra.jpg"
+  }
+]

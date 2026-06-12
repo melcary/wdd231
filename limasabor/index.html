@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Lima's world-famous food scene. Explore iconic Peruvian dishes, top restaurants, and local markets with Lima Sabor — your gastronomic tourism guide.">
+  <meta name="author" content="Mel Cary">
+  <meta property="og:title" content="Lima Sabor — Gastronomic Tourism Guide">
+  <meta property="og:description" content="Explore Lima's iconic dishes, restaurants, and markets. Your guide to Peru's culinary capital.">
+  <meta property="og:type" content="website">
+  <meta property="og:url"   content="https://melcary.github.io/wdd231/limasabor/index.html">
+  <meta property="og:image" content="https://melcary.github.io/wdd231/limasabor/images/og-image.jpg"> 
+  <link rel="icon" href="favicon-limasabor.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <title>Lima Sabor | Home Page</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Lima Sabor</a>
+      <button class="hamburger" id="ham-btn" aria-label="Navigation menu"></button>
+    </nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dishes.html">Dishes</a></li>
+        <li><a href="guide.html">Guide</a></li>
+      </ul>
+  </header>
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+         
+          <div class="hero-weather" id="weather-widget">
+            <span>📍 Lima, Peru</span>
+          </div>
+
+          <h1 id="hero-heading">Taste the World in One City</h1>
+          <p>
+            Lima is Latin America's culinary capital. Home to ceviche, lomo saltado,
+            world-class restaurants, and vibrant street food culture. Let us be your guide.
+          </p>
+          <div class="hero-actions">
+            <a href="dishes.html" class="btn btn-primary">Explore Dishes</a>
+            <a href="guide.html" class="btn btn-outline">Find Restaurants</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap" aria-hidden="true">
+          <img src="images/hero.jpg" alt="Colorful spread of Peruvian dishes including ceviche and lomo saltado" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <div id="visit-banner"> </div>
+
+    <section class="features">
+      <h2 id="features-heading" class="sr-only">What Lima Sabor offers</h2>
+      <div class="features-inner">
+        <div class="feature-item">
+          <span class="feature-icon" aria-hidden="true">🍽️</span>
+          <h3>15 Iconic Dishes</h3>
+          <p>From ceviche to picarones — discover the flavors that define Lima.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon" aria-hidden="true">📍</span>
+          <h3>Neighborhood Guides</h3>
+          <p>Miraflores, Barranco, Surquillo — know exactly where to eat.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon" aria-hidden="true">☁️</span>
+          <h3>Live Lima Weather</h3>
+          <p>Plan your outdoor dining with real-time weather data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section >
+      <div class="home-dishes">
+        <div class="section-title">
+          <h2 id="featured-heading">Featured Dishes</h2>
+          <p>A taste of what Lima has to offer</p>
+        </div>
+        <div class="home-dishes-grid" id="featured-dishes" aria-live="polite">
+          <p>Loading dishes…</p>
+        </div>
+        <div>
+          <a href="dishes.html" class="btn btn-secondary">See All 15 Dishes →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT LIMA -->
+    <section class="section-alt">
+      <div class="section">
+        <div class="section-title">
+          <h2 id="about-heading">Why Lima?</h2>
+          <p>Three-time winner of World's Leading Culinary Destination</p>
+        </div>
+        <div>
+          <p>
+            Lima has earned its place among the world's top gastronomic cities, blending
+            indigenous Andean ingredients with Japanese, Chinese, African, and Spanish
+            culinary traditions. The result is a cuisine unlike anything else on Earth —
+            bold, fresh, and deeply rooted in history.
+          </p>
+          <p>
+            From the upscale restaurants of Miraflores to the street stalls of
+            the Historic Center, every corner of Lima tells a delicious story.
+          </p>
+          <a href="guide.html" class="btn btn-primary">
+            Explore the Guide
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-social">
+        <a href="https://www.facebook.com/mel.cary.pretel" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="45" height="45"></a>
+        <a href="https://www.linkedin.com/in/melcarypretel/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="45" height="45"></a>
+        <a href="https://github.com/melcary" target="_blank"><img src="images/github.svg" alt="Github" width="45" height="45"></a>
+      </div>
+      <div class="footer-dev">
+        <p>WDD 231 — Class Project</p>
+        <p><span>Mel Cary</span></p>
+        <p class="footer-info">© <span id="currentyear"></span> • Mel Cary • Peru </p>
+        <p class="last-modified" id="lastModified"></p> 
+        <p>Weather data by · <a href="https://openweathermap.org" target="_blank" rel="noopener"> OpenWeatherMap </a> ·
+        <a href="attributions.html">Attributions</a>
+        </p>
+      </div>
+  </footer>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
