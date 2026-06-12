@@ -91,9 +91,10 @@ function openModal(id) {
   content.innerHTML = `
     <button class="modal-close" id="modal-close-btn" aria-label="Close dialog">✕</button>
     <img
-  class="card-img"
+  class="modal-img"
   src="${dish.image}"
   alt="${dish.name}">
+  <div class="modal-content">
     <h2>${dish.name}</h2>
     <p>${dish.description}</p>
     <div class="modal-detail">
@@ -105,9 +106,11 @@ function openModal(id) {
         <label>Region</label>
         <span>${dish.region}</span>
       </div>
-    </div>
-    <div>
-      <strong>📍 Where to try it:</strong> ${dish.whereToTry}
+    
+      </div>
+      <div>
+        <strong>📍 Where to try it:</strong> ${dish.whereToTry}
+      </div>
     </div>
   `;
 

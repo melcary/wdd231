@@ -402,6 +402,19 @@ footer {
   gap: 0.5rem 1rem;
   margin-bottom: 1rem;
 }
+
+.modal-img {
+  width: 100%;
+  max-width: 450px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.modal-content{
+  max-width:450px;
+   margin: 0 auto;
+}
  
 .modal-detail-item label {
   display: block;
