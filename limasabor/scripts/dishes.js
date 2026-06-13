@@ -156,7 +156,7 @@ async function loadDishes() {
 function persistFilter() {
   const saved = localStorage.getItem('ls_dish_filter');
   if (saved) {
-    const btn = document.querySelector(`.filter-buton[data-filter="${saved}"]`);
+    const btn = document.querySelector(`.filter-button[data-filter="${saved}"]`);
     if (btn) btn.click();
   }
 
